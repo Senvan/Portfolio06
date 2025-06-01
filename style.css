@@ -1,10 +1,11 @@
-* Reset & base */
+/* Reset & base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9ff;
@@ -20,26 +21,24 @@ body {
 
 /* Header */
 header {
-  background-color: #5a4dff; /* violet */
+  background-color: #5a4dff;
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgb(90 77 255 / 0.3);
+  box-shadow: 0 2px 8px rgba(90, 77, 255, 0.3);
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.6rem;
-  color: #ffffff;
-  letter-spacing: 1.5px;
-  cursor: default;
+  color: #fff;
 }
 
 .nav a {
@@ -47,16 +46,11 @@ header {
   text-decoration: none;
   margin-left: 2rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.nav a:hover,
-.nav a:focus {
-  color: #82aaff; /* lighter blue */
-}
-
-.nav.open {
-  display: block;
+.nav a:hover {
+  color: #82aaff;
 }
 
 /* Hamburger */
@@ -65,7 +59,6 @@ header {
   flex-direction: column;
   cursor: pointer;
 }
-
 .hamburger span {
   height: 3px;
   width: 25px;
@@ -87,6 +80,10 @@ header {
     padding: 1rem 0;
   }
 
+  .nav.open {
+    display: flex;
+  }
+
   .nav a {
     margin: 1rem 0;
     text-align: center;
@@ -95,10 +92,6 @@ header {
   .hamburger {
     display: flex;
   }
-
-  .nav.open {
-    display: block;
-  }
 }
 
 /* Sections */
@@ -106,8 +99,32 @@ header {
   padding: 4rem 0;
   text-align: center;
 }
-
 .section h2 {
   font-size: 2.2rem;
   color: #5a4dff;
+  margin-bottom: 1rem;
 }
+
+/* Hero Image */
+.hero-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Skills & Projects */
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-card, .project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(90, 77, 255, 0.1);
+  transition: transform 0.3}
