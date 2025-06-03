@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,24 +6,22 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f9fbfd;
+  background-color: #f9fbff;
   color: #222;
   line-height: 1.6;
 }
 h1, h2 {
   text-align: center;
+  color: #1e3a8a;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-ul {
-  list-style: none;
-}
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
+  background-color: #e0f2fe;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -31,23 +29,23 @@ ul {
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .logo {
   font-weight: bold;
-  font-size: 1.4rem;
-  color: #0077cc;
+  font-size: 1.5rem;
+  color: #1e40af;
 }
 nav ul {
   display: flex;
   gap: 1.5rem;
 }
 nav ul li a {
-  font-weight: bold;
-  color: #333;
+  font-weight: 600;
+  color: #1e40af;
 }
 nav ul li a:hover {
-  color: #0077cc;
+  color: #2563eb;
 }
 .hamburger {
   display: none;
@@ -57,14 +55,14 @@ nav ul li a:hover {
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: #333;
+  background: #1e40af;
   margin: 4px 0;
 }
 @media (max-width: 768px) {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #e0f2fe;
     padding: 1rem;
     position: absolute;
     right: 2rem;
@@ -83,82 +81,75 @@ nav ul li a:hover {
 .section {
   padding: 4rem 2rem;
   text-align: center;
-  animation: fadeInUp 1s ease forwards;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .profile-pic {
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
-  margin: 1rem auto;
-  border: 4px solid #0077cc;
+  border: 5px solid #1e40af;
   display: block;
+  margin: 1rem auto;
 }
 .location {
-  color: #777;
   margin-top: 0.5rem;
+  color: #555;
 }
 
 /* Skills */
 .skills-list {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .skill {
-  background-color: #e6f0fa;
-  color: #0077cc;
+  background-color: #dbeafe;
+  color: #1e40af;
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
   font-weight: bold;
-  transition: transform 0.3s;
+  transition: background 0.3s ease, transform 0.2s;
 }
 .skill:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  background-color: #93c5fd;
 }
 
 /* Projects */
 .project {
-  background-color: #f0f8ff;
+  background-color: #f0f9ff;
   padding: 1.5rem;
   margin: 1rem auto;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 10px;
-  border-left: 4px solid #0077cc;
+  border-left: 4px solid #3b82f6;
 }
 .project-link {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #0077cc;
-  font-weight: bold;
+  color: #2563eb;
+  font-weight: 600;
+}
+.project-link:hover {
+  text-decoration: underline;
 }
 
 /* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 .social-icons a {
-  color: #0077cc;
-  font-size: 1.4rem;
-  transition: transform 0.3s;
+  color: #1d4ed8;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
 }
 .social-icons a:hover {
   transform: scale(1.2);
 }
 
-/* Form */
+/* Contact Form */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -168,27 +159,51 @@ form {
 }
 input, textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
+  font-family: inherit;
 }
 button {
-  background-color: #0077cc;
+  background-color: #1e40af;
   color: #fff;
   padding: 0.8rem;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 button:hover {
-  background-color: #005fa3;
+  background-color: #2563eb;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #f4faff;
-  color: #444;
+  padding: 2rem 0;
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+  font-size: 0.9rem;
+}
+.logo {
+  height: 50px;
+}
+
+/* Show light logo by default */
+.light-logo {
+  display: block;
+}
+
+.dark-logo {
+  display: none;
+}
+
+/* Use dark logo when in dark mode */
+@media (prefers-color-scheme: dark) {
+  .light-logo {
+    display: none;
+  }
+
+  .dark-logo {
+    display: block;
+  }
 }
