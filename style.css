@@ -147,6 +147,7 @@ nav ul li a:hover {
 }
 .social-icons a:hover {
   transform: scale(1.2);
+  color: #2563eb;
 }
 
 /* Contact Form */
@@ -184,26 +185,11 @@ footer {
   color: #1e3a8a;
   font-size: 0.9rem;
 }
-.logo {
-  height: 50px;
+.social-links img {
+  margin: 0 10px;
+  transition: transform 0.9s;
 }
 
-/* Show light logo by default */
-.light-logo {
-  display: block;
-}
-
-.dark-logo {
-  display: none;
-}
-
-/* Use dark logo when in dark mode */
-@media (prefers-color-scheme: dark) {
-  .light-logo {
-    display: none;
-  }
-
-  .dark-logo {
-    display: block;
-  }
+.social-links img:hover {
+  transform: scale(1.1);
 }
