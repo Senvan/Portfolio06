@@ -3,112 +3,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ivan Josh Bercasio | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivan Josh Bercasio - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <header>
-    <div class="container header-container">
-      <div class="logo">Ivan Josh Bercasio</div>
-      <nav class="nav" id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <header class="navbar">
+    <div class="logo">Ivan Bercasio</div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="home" class="section" data-aos="fade-up">
-    <div class="hero-image">
-      <img src="pics/hero.jpg" alt="Ivan Josh Bercasio" />
-    </div>
-    <h2>Hello, I'm Ivan!</h2>
-    <p>I craft clean, responsive, and engaging web interfaces using modern technologies.</p>
+  <section id="home" class="section fade-in">
+    <img src="pics/pic2.jpg" alt="Ivan Josh Bercasio" class="profile-pic">
+    <h1>Hello, I’m <span>Ivan Josh Bercasio</span></h1>
+    <p class="location">📍San Pedro, Laguna, Philippines</p>
   </section>
 
-  <section id="about" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm Ivan Josh Bercasio, a passionate front-end web developer with a love for minimalist design and clean code.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">React</div>
-      </div>
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>I’m a front-end developer passionate about building clean and interactive web interfaces. I enjoy crafting user-first experiences using modern technologies.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/ivanbercasio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ivanbercasio" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ivanbercasio" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="bercasioivan581@gmail.com"><i class="fas fa-envelope"></i></a>
+      
     </div>
   </section>
 
-  <section id="projects" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p></p>
-        </div>
-        <div class="project-card">
-          <h3>Coming Soon</h3>
-          <p>New exciting projects under development.</p>
-        </div>
-      </div>
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git</div>
     </div>
   </section>
 
-  <section id="certificates" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>Certificates</h2>
-      <div class="certificates">
-        <img src="pics/certificate1.png" alt="Certificate 1" />
-        <img src="pics/certificate2.png" alt="Certificate 2" />
-      </div>
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>A responsive website to showcase my projects and skills.</p>
+      <a href="https://github.com/ivanbercasio/portfolio" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>To-Do App</h3>
+      <p>A simple React task app with local storage support.</p>
+      <a href="https://github.com/ivanbercasio/todo-app" target="_blank" class="project-link">View on GitHub</a>
     </div>
   </section>
 
-  <section id="contact" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>Contact</h2>
-      <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div class="socials">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
+  <section id="certificates" class="section fade-in">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Responsive Web Design - freeCodeCamp</li>
+      <li>JavaScript Algorithms and Data Structures</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form target="_blank" action="https://bercasioivan581@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <div class="container">&copy; 2025 Ivan Josh Bercasio</div>
+    <p>&copy; 2025 Ivan Josh Bercasio. All rights reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000 });
     const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav');
-    hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
   </script>
 </body>
 </html>
