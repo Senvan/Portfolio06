@@ -193,3 +193,20 @@ footer {
 .social-links img:hover {
   transform: scale(1.1);
 }
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #1877f2;
+}
