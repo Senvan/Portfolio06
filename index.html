@@ -1,15 +1,23 @@
-<link rel="stylesheet" href="style.css"/><!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ivan Josh Bercasio - Portfolio</title>
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Font Awesome (correct version) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8Mj8GhIPFLy9jqVu6zLg4a0uPmRRicgHw6ElAq8KpHdLZxWqeykHpqR1iGvabHI2FSazsCQBsdasR9q+yRMG/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Ivan Bercasio</div>
     <div class="hamburger" id="hamburger">
@@ -27,24 +35,28 @@
     </nav>
   </header>
 
+  <!-- Home Section -->
   <section id="home" class="section fade-in">
     <img src="pics/pic2.jpg" alt="Ivan Josh Bercasio" class="profile-pic">
     <h1>Hello, I’m <span>Ivan Josh Bercasio</span></h1>
-    <p class="location">📍San Pedro, Laguna, Philippines</p>
+    <p class="location">📍 San Pedro, Laguna, Philippines</p>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>I’m a front-end developer passionate about building clean and interactive web interfaces. I enjoy crafting user-first experiences using modern technologies.</p>
+    <p>I am Ivan Josh C. Bercasio, a dedicated and passionate student from BSIT-212 at STI College Alabang, driven by a strong interest in technology, innovation, and continuous learning as I pursue my Bachelor of Science in Information Technology.</p>
+    
+    <!-- Social Icons -->
     <div class="social-icons">
       <a href="https://facebook.com/ivanbercasio" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/ivanbercasio" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@ivanbercasio" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="bercasioivan581@gmail.com"><i class="fas fa-envelope"></i></a>
-      
+      <a href="mailto:bercasioivan581@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="section fade-in">
     <h2>Skills</h2>
     <div class="skills-list">
@@ -55,6 +67,7 @@
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="section fade-in">
     <h2>Projects</h2>
     <div class="project">
@@ -69,17 +82,18 @@
     </div>
   </section>
 
+  <!-- Certificates Section -->
   <section id="certificates" class="section fade-in">
     <h2>Certificates</h2>
     <ul>
       <li>Coming soon</li>
-      <li></li>
     </ul>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="section fade-in">
     <h2>Contact Me</h2>
-    <li>Bercasioivan581@gmail.com</li>
+    <li>bercasioivan581@gmail.com</li>
     
     <form target="_blank" action="https://formsubmit.co/bercasioivan581@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Full Name" required />
@@ -89,10 +103,19 @@
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Ivan Josh Bercasio. All rights reserved.</p>
+    
+    <!-- Footer Social Links -->
+    <div class="social-links">
+      <a href="https://facebook.com/ivanbercasio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:bercasioivan581@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.tiktok.com/@ivanbercasio" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
   </footer>
 
+  <!-- JS -->
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
@@ -100,16 +123,6 @@
       navMenu.classList.toggle('show');
     });
   </script>
+
 </body>
 </html>
-<div class="social-links">
-  <a href="https://www.facebook.com/josh.bercasio" target="_blank">
-    <img src="facebook-logo.png" alt="FB" width="50">
-  </a>
-  <a href="mailto:bercasioivan581@gmail.com">
-    <img src="gmail-logo.png" alt="Gmail" width="50">
-  </a>
-  <a href="https://tiktok.com/@vanjoshq2" target="_blank">
-    <img src="tiktok-logo.png" alt="tiktok" width="50">
-  </a>
-</div>
